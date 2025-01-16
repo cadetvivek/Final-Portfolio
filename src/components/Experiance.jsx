@@ -11,7 +11,7 @@ import typescript from "../assets/experience/typescript.png";
 import node from "../assets/experience/node.png";
 import express from "../assets/experience/express.png";
 import mongodb from "../assets/experience/mongodb.jpg";
-import mysql from "../assets/experience/mysqL.png";
+import mysql from "../assets/experience/mysql.png";
 import github from "../assets/experience/github.png";
 import aws from "../assets/experience/aws.png";
 
