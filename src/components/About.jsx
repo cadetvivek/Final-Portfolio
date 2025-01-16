@@ -18,9 +18,8 @@ function About() {
           Education & Training
         </h1>
         <span>
-          [Degree/Certification], [Institution], [Year] [Degree/Certification],
-          [Institution], [Year] [Relevant Course], [Platform/Institution],
-          [Year]
+          I completed a cours fromMasai, IncubexHSR21, No 1178, 5th Main Road,
+          Sector 7, HSR Layout, Bengaluru, Karnataka 560102
         </span>
         <br />
         <br />
@@ -28,31 +27,12 @@ function About() {
           Skills & Expertise
         </h1>
         <span>
-          Proficient in [Programming Languages] Experienced with [Software
-          Tools/Technologies] Strong grasp of [Design Principles/Concepts]
-          Excellent problem-solving skills Effective communicator and
-          collaborator
-        </span>
-        <br />
-        <br />
-        <h1 className="text-green-600 font-semibold text-xl">
-          Professional Experience
-        </h1>
-        <span>
-          [Job Title], [Company/Organization], [Dates] [Brief description of
-          responsibilities and achievements] [Job Title],
-          [Company/Organization], [Dates] [Brief description of responsibilities
-          and achievements] [Freelance/Contract Work], [Client/Organization],
-          [Dates] [Brief description of projects and contributions]
-        </span>
-        <br />
-        <br />
-        <h1 className="text-green-600 font-semibold text-xl">
-          Achievements & Awards
-        </h1>
-        <span>
-          [Award/Recognition], [Organization/Institution], [Year] [Achievement],
-          [Organization/Platform], [Year]
+          Proficient in JavaScript, TypeScript, React.js, Node.js, Express.js,
+          and MongoDB; experienced with Git, Tailwind RESTful APIs, MySQL, and
+          AWS; strong grasp of full-stack development, responsive design, and
+          skilled in debugging, optimizing performance, and implementing
+          scalable solutions; effective communicator and collaborative team
+          player in agile environments.
         </span>
         <br />
         <br />
@@ -60,11 +40,12 @@ function About() {
           Mission Statement
         </h1>
         <p>
-          My mission is to leverage my skills and creativity to deliver
-          innovative [Your Field] solutions that exceed client expectations and
-          contribute positively to the digital landscape. I am committed to
-          continuous learning and growth, always seeking new challenges and
-          opportunities to expand my horizons.
+          Now I'm proficient in both front-end and back-end technologies. With
+          over 1200 hours of coding practice and 450+ hours dedicated to
+          mastering Data Structures and Algorithms, I specialize in crafting
+          efficient solutions. My commitment extends beyond technical prowess,
+          investing 100 hours in soft skill development to ensure effective
+          communication and collaboration.
         </p>
       </div>
     </div>

@@ -1,6 +1,6 @@
 import React from "react";
 
-import pic from "../../public/photo.avif";
+import pic from "../../public/photo.jpg";
 
 import { FaSquareFacebook } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa";
@@ -37,11 +37,13 @@ function Home() {
             </div>
             <br />
             <p className="text-sm md:text-md text-justify">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Quisquam, recusandae consequatur. Accusamus sint libero eligendi
-              laborum fuga repudiandae? Asperiores tempore eos animi dolores
-              corrupti! Sint quos, mollitia architecto aliquam nesciunt, optio
-              cum delectus sit voluptatum aut ratione quaerat veniam aperiam!
+            I'm Vivek, a Full Stack Web Developer good in both front-end and
+          back-end technologies. With 1200+ hours of coding practice, 450+ hours
+          in Data Structures and Algorithms, and 100 hours in soft skill
+          development, I excel in crafting efficient solutions. I completed a
+          cours from Bengaluru, Karnataka, further enhancing my
+          skills. Explore my projects to see how I turn ideas into dynamic web
+          solutions.
             </p>
             <br />
             {/* social media icons */}

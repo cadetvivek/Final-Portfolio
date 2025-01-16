@@ -1,75 +1,98 @@
 import React from "react";
-import java from "../../public/java.png";
-import python from "../../public/python.webp";
-import mongoDB from "../../public/mongodb.jpg";
-import express from "../../public/express.png";
-import reactjs from "../../public/reactjs.png";
-import nodejs from "../../public/node.png";
-function PortFolio() {
-  const cardItem = [
+import Generics from "../assets/portfolio/Generics.png";
+import Reactmeal from "../assets/portfolio/Reactmeal.png";
+import expenseTracker from "../assets/portfolio/expenseTracker.png";
+import gymWebsite from "../assets/portfolio/gymWebsite.png";
+import Villas from "../assets/portfolio/Villas.png";
+import OurExpense from "../assets/portfolio/ourExpense.png";
+
+const PortFolio = () => {
+  const portfolios = [
     {
       id: 1,
-      logo: mongoDB,
-      name: "MongoDB",
+      src: Generics,
+      demoLink: "https://delightful-cassata-3db12a.netlify.app/",
+      codeLink: "https://github.com/cadetvivek/Building-Ecommerce--all-project",
     },
     {
       id: 2,
-      logo: express,
-      name: "Express",
+      src: Reactmeal,
+      demoLink: "https://kaleidoscopic-speculoos-8feded.netlify.app/",
+      codeLink: "https://github.com/cadetvivek/Restaurant-app",
     },
     {
       id: 3,
-      logo: reactjs,
-      name: "ReactJS",
+      src: expenseTracker,
+      demoLink: "https://stirring-mochi-97d67c.netlify.app/login",
+      codeLink: "https://github.com/cadetvivek/Expense-Tracker-premium1",
     },
     {
       id: 4,
-      logo: nodejs,
-      name: "NodeJS",
-    },
-    {
-      id: 5,
-      logo: python,
-      name: "Python",
+      src: gymWebsite,
+      demoLink: "https://funny-stardust-a6d056.netlify.app/",
+      codeLink: "https://github.com/cadetvivek/GYM-WEBSITE/tree/master",
     },
     {
       id: 6,
-      logo: java,
-      name: "Java",
+      src: Villas,
+      demoLink: "https://grand-cascaron-ba93e1.netlify.app/",
+      codeLink: "https://github.com/cadetvivek/Luxury-Villas",
+    },
+    {
+      id: 7,
+      src: OurExpense,
+      demoLink: "https://github.com/cadetvivek/OurExpense",
+      codeLink: "https://github.com/cadetvivek/OurExpense",
     },
   ];
+
   return (
-    <div
-      name="Portfolio"
-      className="max-w-screen-2xl container mx-auto px-4 md:px-20 mt-10"
-    >
-      <div>
-        <h1 className="text-3xl font-bold mb-5">PortFolio</h1>
-        <span className=" underline font-semibold">Featured Projects</span>
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-3 my-5">
-          {cardItem.map(({ id, logo, name }) => (
+    <div name="portfolio" className="w-full text-white py-10">
+      <div className="max-w-screen-lg mx-auto px-4">
+        <div className="text-center">
+          <h1 className="text-4xl text-black font-bold inline border-b-4 border-black">
+            Portfolio
+          </h1>
+          <p className="text-black py-6 text-lg">
+            Explore my ideas and thoughts here. Working parts are below.
+          </p>
+        </div>
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10 mt-8">
+          {portfolios.map(({ id, src, demoLink, codeLink }) => (
             <div
-              className="md:w-[300px] md:h-[300px] border-[2px] rounded-lg shadow-lg p-1 cursor-pointer hover:scale-110 duration-300"
               key={id}
+              className="bg-gray-900 shadow-lg shadow-gray-700 rounded-lg overflow-hidden transform hover:scale-105 duration-300"
             >
               <img
-                src={logo}
-                className="w-[120px] h-[120px] p-1 rounded-full border-[2px]"
+                src={src}
                 alt=""
+                className="w-full h-48 object-cover rounded-t-md"
               />
-              <div>
-                <div className="px-2 font-bold text-xl mb-2">{name}</div>
-                <p className="px-2 text-gray-700">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              <div className="p-4">
+                <h2 className="text-xl font-semibold text-center mb-2">
+                  Project {id}
+                </h2>
+                <p className="text-gray-400 text-sm text-center mb-4">
+                  A brief description of the project can go here.
                 </p>
-              </div>
-              <div className=" px-6 py-4 space-x-3 justify-around">
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold px-4 py-2 rounded">
-                  Video
-                </button>
-                <button className="bg-green-500 hover:bg-green-700 text-white font-bold px-4 py-2 rounded">
-                  Source code
-                </button>
+                <div className="flex justify-between space-x-2">
+                  <a
+                    href={demoLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 bg-blue-500 hover:bg-blue-700 text-white text-center py-2 rounded-lg"
+                  >
+                    Demo
+                  </a>
+                  <a
+                    href={codeLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 bg-green-500 hover:bg-green-700 text-white text-center py-2 rounded-lg"
+                  >
+                    Code
+                  </a>
+                </div>
               </div>
             </div>
           ))}
@@ -77,6 +100,6 @@ function PortFolio() {
       </div>
     </div>
   );
-}
+};
 
 export default PortFolio;
